@@ -21,7 +21,6 @@ public class CoursesController {
 //    System.out.println(coursesService.getAllCourses());
         public String getAllCourses(Model model){
         model.addAttribute("courses",coursesService.getAllCourses());
-//
         return "courses";
         }
 
