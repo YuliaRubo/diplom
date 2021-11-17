@@ -10,15 +10,20 @@
         <table>
             <thead>
                <tr>
-                  <th>Courses</th>
+                  <th>Name</th>
+                  <th>SurName</th>
+                  <th>Age</th>
                   <th>Actions</th>
                </tr>
             </thead>
             <tbody>
-                <c:forEach items="${courses}" var="courses">
+                <c:forEach items="${courses.students}" var="student">
                     <tr>
-                         <td>${courses.name}</td>
-                         <td><a href="http://Localhost:8080/get_courses_with_student?id=${courses.id}"><input type="button" value = "Student"></a></td>
+                         <td>${student.name}</td>
+                         <td>${student.surname}</td>
+                         <td>${student.age}</td>
+
+
                     </tr>
                 </c:forEach>
             </tbody>

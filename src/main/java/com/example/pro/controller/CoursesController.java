@@ -28,4 +28,10 @@ public class CoursesController {
     public void getAllCourses(@RequestParam int id){
         System.out.println(coursesService.getCoursesById(id));
     }
+
+
+    @GetMapping("/hello")
+    public String anotherting(Model model){
+        return "welcome";
+    }
 }
