@@ -37,21 +37,21 @@ public class StudentController {
         return "saveStudent";
     }
 
-//    @GetMapping("/update-student")
-//    public String updateStudentForm(@RequestParam int id, Model model){
-//        model.addAttribute("student", studentService.getStudentById(id));
-//        return "saveStudent";
-//    }
+    @GetMapping("/update-student")
+    public String updateStudentForm(@RequestParam int id, Model model){
+        model.addAttribute("student", studentService.getStudentById(id));
+        return "saveStudent";
+    }
     @PostMapping("/save-student")
     public String  saveStudent(@ModelAttribute("student") StudentDto studentDto){
-        studentService.saveOrUpdate(studentDto);
+        studentService.saveOrUpdateStudent(studentDto);
         return "redirect:/get_courses_with_student";
     }
 
-//    @GetMapping("/delete")
-//    public  String deleteStudent(@RequestParam int id){
-//        studentService.deleteStudent(id);
-//        return "redirect:/get_courses_with_student";
-//    }
+    @GetMapping("/delete-student")
+    public  String deleteStudent(@RequestParam int id){
+        studentService.deleteStudent(id);
+        return "redirect:/get_courses_with_student";
+    }
 
 }

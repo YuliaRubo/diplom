@@ -6,6 +6,6 @@ import com.example.pro.dto.StudentDto;
 public interface StudentService {
     CoursesDto getCoursesWithStudentByCoursesId(int id);
     StudentDto getStudentById(int id);
-    void saveOrUpdate(StudentDto studentDto);
+    void saveOrUpdateStudent(StudentDto studentDto);
     void deleteStudent(int id);
 }

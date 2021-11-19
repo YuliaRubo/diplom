@@ -46,7 +46,7 @@ public class StudentDaoImpl implements StudentDao{
     }
 
     @Override
-    public void saveOrUpdate(StudentDto studentDto) {
+    public void saveOrUpdateStudent(StudentDto studentDto) {
         Map<String, Object> params = new HashMap<>();
         params.put("name", studentDto.getName());
         params.put("surname", studentDto.getSurname());
@@ -61,7 +61,7 @@ public class StudentDaoImpl implements StudentDao{
     }
 
     @Override
-    public void delete(int id) {
+    public void deleteStudent(int id) {
         Map<String, Object> params = new HashMap<>();
         params.put("id", id);
         namedParameterJdbcTemplate.update(DELETE_STUDENT,params);

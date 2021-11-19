@@ -7,6 +7,6 @@ public interface StudentDao {
     CoursesDto getCoursesWithStudentByCoursesId(int id);
     StudentDto getStudentById(int id);
 
-    void saveOrUpdate(StudentDto studentDto);
-    void delete(int id);
+    void saveOrUpdateStudent(StudentDto studentDto);
+    void deleteStudent(int id);
 }

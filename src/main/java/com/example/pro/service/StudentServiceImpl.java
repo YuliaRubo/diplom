@@ -26,13 +26,13 @@ public class StudentServiceImpl implements StudentService{
     }
 
     @Override
-    public void saveOrUpdate(StudentDto studentDto) {
-        studentDao.saveOrUpdate(studentDto);
+    public void saveOrUpdateStudent(StudentDto studentDto) {
+        studentDao.saveOrUpdateStudent(studentDto);
     }
 
 
     @Override
     public void deleteStudent(int id) {
-    studentDao.delete(id);
+    studentDao.deleteStudent(id);
     }
 }

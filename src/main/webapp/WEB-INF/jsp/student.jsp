@@ -23,9 +23,9 @@
                          <td>${student.surname}</td>
                          <td>${student.age}</td>
                          <td><a href="http://Localhost:8080/get-all-courses"><input type="button" value = "Courses"></a></td>
-                         <td><a href="http://Localhost:8080/add-new-student?id=${student.id}"><input type="button" value = "Add"></a></td>
+                         <td><a href="http://Localhost:8080/add-new-student"><input type="button" value = "Add"></a></td>
                          <td><a href="http://Localhost:8080/update-student?id=${student.id}"><input type="button" value = "Update"></a></td>
-                         <td><a href="http://Localhost:8080//delete?id=${student.id}"><input type="button" value = "Delete"></a></td>
+                         <td><a href="http://Localhost:8080//delete-student?id=${student.id}"><input type="button" value = "Delete"></a></td>
 
                     </tr>
                 </c:forEach>
