@@ -25,4 +25,14 @@ public class CoursesServiceImpl implements CoursesService{
     public CoursesDto getCoursesById(int id) {
         return coursesDao.getCoursesById(id);
     }
+
+    @Override
+    public void saveOrUpdate(CoursesDto coursesDto) {
+        coursesDao.saveOrUpdate(coursesDto);
+    }
+
+    @Override
+    public void delete(int id) {
+        coursesDao.delete(id);
+    }
 }

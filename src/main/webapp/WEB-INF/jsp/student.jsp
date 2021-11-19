@@ -22,7 +22,7 @@
                          <td>${student.name}</td>
                          <td>${student.surname}</td>
                          <td>${student.age}</td>
-
+                         <td><a href="http://Localhost:8080/"><input type="button" value = "Student"></a></td>
 
                     </tr>
                 </c:forEach>

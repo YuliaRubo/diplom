@@ -7,4 +7,6 @@ import java.util.List;
 public interface CoursesService {
     List<CoursesDto> getAllCourses();
     CoursesDto getCoursesById(int id);
+    void saveOrUpdate(CoursesDto coursesDto);
+    void delete(int id);
 }
