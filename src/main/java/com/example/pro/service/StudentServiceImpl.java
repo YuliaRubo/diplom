@@ -2,6 +2,7 @@ package com.example.pro.service;
 
 import com.example.pro.dao.StudentDao;
 import com.example.pro.dto.CoursesDto;
+import com.example.pro.dto.StudentDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,5 +18,21 @@ public class StudentServiceImpl implements StudentService{
     @Override
     public CoursesDto getCoursesWithStudentByCoursesId(int id) {
         return studentDao.getCoursesWithStudentByCoursesId(id);
+    }
+
+    @Override
+    public StudentDto getStudentById(int id) {
+        return studentDao.getStudentById(id);
+    }
+
+    @Override
+    public void saveOrUpdate(StudentDto studentDto) {
+        studentDao.saveOrUpdate(studentDto);
+    }
+
+
+    @Override
+    public void deleteStudent(int id) {
+    studentDao.delete(id);
     }
 }
