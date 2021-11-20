@@ -5,7 +5,7 @@
     <head>
         <title>Courses</title>
         <link href ="student.css" rel= "stylesheet"/>
-         </head>
+    </head>
     <body>
         <table>
             <thead>
@@ -17,12 +17,13 @@
                </tr>
             </thead>
             <tbody>
+                <a href="http://Localhost:8080/get-all-courses"><input type="button" value = "Courses"></a>
+                <br>
                 <c:forEach items="${courses.students}" var="student">
                     <tr>
                          <td>${student.name}</td>
                          <td>${student.surname}</td>
                          <td>${student.age}</td>
-                         <td><a href="http://Localhost:8080/get-all-courses"><input type="button" value = "Courses"></a></td>
                          <td><a href="http://Localhost:8080/add-new-student"><input type="button" value = "Add"></a></td>
                          <td><a href="http://Localhost:8080/update-student?id=${student.id}"><input type="button" value = "Update"></a></td>
                          <td><a href="http://Localhost:8080//delete-student?id=${student.id}"><input type="button" value = "Delete"></a></td>
